@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل الوجهات السياحية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌍 مستكشف الوجهات العالمية</h1>
+        <p>قاعدة بيانات سياحية تفاعلية</p>
+        
+        <div class="controls">
+            <select id="fileSelector">
+                <option value="">اختر مجموعة البيانات...</option>
+                <option value="ar group A.json">المجموعة A (أذربيجان، إيسلندا، إثيوبيا)</option>
+                <option value="ar group B.json">المجموعة B (موريتانيا، بنغلاديش...)</option>
+                <option value="ar group C.json">المجموعة C (تركيا، مالي...)</option>
+                <option value="ar group D.json">المجموعة D (سلوفاكيا، كوسوفو...)</option>
+                <option value="ar group E.json">المجموعة E (العراق، أوزبكستان...)</option>
+                <option value="ar group F.json">المجموعة F (كولومبيا، منغوليا...)</option>
+                <option value="ar group G.json">المجموعة G (غابون، الجبل الأسود...)</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div id="status" class="status-msg">يرجى اختيار مجموعة لعرض البيانات...</div>
+        <div id="cardsGrid" class="grid"></div>
+    </main>
+
+    <footer>
+        <p>تم استخراج البيانات من ملفات JSON الخاصة بالمستودع</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
